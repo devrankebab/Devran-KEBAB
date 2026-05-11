@@ -21,7 +21,7 @@ export const MENU: MenuCategory[] = [
     title: "Nos Sandwichs (~9€)",
     items: [
       { id: "s1", name: "Kebab", description: "100% veau fait maison" },
-      { id: "s2", name: "Tacos", description: "Avec tranches de cheddar" },
+      { id: "s2", name: "Tacos", price: "10€", description: "Avec tranches de cheddar" },
       { id: "s3", name: "Galette", description: "Fine et croustillante" },
       { id: "s4", name: "Kofte", description: "Recette traditionnelle" },
       { id: "s5", name: "Merguez", description: "Épicées juste ce qu'il faut" },
@@ -36,7 +36,7 @@ export const MENU: MenuCategory[] = [
       { id: "m1", name: "Menu Kebab" },
       { id: "m2", name: "Menu Kofte" },
       { id: "m3", name: "Menu Steak" },
-      { id: "m4", name: "Menu Tacos" },
+      { id: "m4", name: "Menu Tacos", price: "14€" },
       { id: "m5", name: "Menu Merguez" },
       { id: "m6", name: "Menu Sucuk" },
       { id: "m7", name: "Menu Galette" },
@@ -44,11 +44,12 @@ export const MENU: MenuCategory[] = [
     ]
   },
   {
-    title: "Nos Assiettes (~13€)",
+   title: "Nos Assiettes (Sur place 15€ / Emporter 13€)",
     items: [
-      { id: "a1", name: "Assiette Kebab", description: "Servie avec crudités" },
+      { id: "a1", name: "Assiette Kebab", description: "Servie avec crudités et frites" },
       { id: "a2", name: "Assiette Kofte", description: "Boulettes de bœuf mi-grillées" },
       { id: "a3", name: "Assiette Steak", description: "Double steak haché" },
+      { id: "a4", name: "Assiette Patron", price: "20€", description: "La spéciale du chef" }
     ]
   },
   {
