@@ -32,7 +32,7 @@ export const MENU = [
     ],
   },
   {
-    title: "Nos Menus (~13€)",
+    title: "Nos Menus",
     items: [
       { id: "m1", name: "Menu Kebab", price: "13€" },
       { id: "m2", name: "Menu Kofte", price: "13€" },
@@ -42,6 +42,7 @@ export const MENU = [
       { id: "m6", name: "Menu Sucuk", price: "13€" },
       { id: "m7", name: "Menu Galette", price: "13€" },
       { id: "m8", name: "Menu Américain", price: "13€" },
+      { id: "e1", name: "Le P'tit Devran (Enfant)", price: "9€", description: "4 Nuggets ou 2 Tenders + Petite frite + Capri-Sun + Jouet" },
     ],
   },
   {
@@ -54,12 +55,6 @@ export const MENU = [
       { id: "a5", name: "Assiette Sucuk", price: "15€ / 13€", description: "Servie avec salade (Sur place / Emporter)" },
       { id: "a6", name: "Assiette Patron", price: "20€", description: "La spécialité de la maison" },
       { id: "a7", name: "Assiette Enfant / Nuggets", price: "9€", description: "Portion enfant" },
-    ],
-  },
-  {
-    title: "Le P'tit Devran (Menu Enfant 9€)",
-    items: [
-      { id: "e1", name: "Menu Nuggets ou Tenders", price: "9€", description: "4 Nuggets ou 2 Tenders + Petite frite + Capri-Sun + Jouet" },
     ],
   },
   {
