@@ -54,7 +54,7 @@ export const MENU = [
       { id: "a4", name: "Assiette Merguez", price: "15€ / 13€", description: "Servie avec frites (Sur place / Emporter)" },
       { id: "a5", name: "Assiette Sucuk", price: "15€ / 13€", description: "Servie avec salade (Sur place / Emporter)" },
       { id: "a6", name: "Assiette Patron", price: "20€", description: "La spécialité de la maison" },
-      { id: "a7", name: "Assiette Enfant / Nuggets", price: "9€", description: "Portion enfant" },
+      { id: "a7", name: "Assiette Enfant", price: "9€", description: "Portion enfant" },
     ],
   },
   {
