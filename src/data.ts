@@ -1,3 +1,20 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+export interface MenuItem {
+  id: string;
+  name: string;
+  price?: string;
+  description?: string;
+  image?: string;
+}
+
+export interface MenuCategory {
+  title: string;
+  items: MenuItem[];
+}
 export const MENU = [
   {
     title: "Nos Sandwichs",
