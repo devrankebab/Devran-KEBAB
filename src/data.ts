@@ -90,5 +90,5 @@ export const MENU = [
 ];
 
 export const SAUCES = [
-  "Ketchup", "Mayonnaise", "Samouraï", "Blanche maison", "Algérienne", "Harissa", "Andalouse"
+  "Ketchup", "Mayonnaise", "Samouraï", "Blanche maison", "Algérienne", "Harissa",
 ];
