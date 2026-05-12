@@ -19,28 +19,30 @@ const MenuSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Menu Grid */}
+        {/* Grille principale du Menu (Sandwichs, Menus, Assiettes, Barquettes, etc.) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-24">
           {MENU.map((category, idx) => (
             <div key={idx} className="space-y-10">
               <h3 className="text-4xl font-display leading-none border-b-8 border-brand-red inline-block mb-4">
-                {category.title.split(' (')[0]}
+                {category.title}
               </h3>
               <div className="space-y-8">
                 {category.items.map((item) => (
                   <div key={item.id} className="flex justify-between items-start group border-b border-gray-100 pb-4">
                     <div className="flex-grow">
-                      <h4 className="text-2xl font-display text-brand-black group-hover:text-brand-red transition-colors mb-1">{item.name}</h4>
-                      {item.description && <p className="text-[11px] text-gray-400 font-black uppercase tracking-widest leading-none">{item.description}</p>}
+                      <h4 className="text-2xl font-display text-brand-black group-hover:text-brand-red transition-colors mb-1">
+                        {item.name}
+                      </h4>
+                      {item.description && (
+                        <p className="text-[11px] text-gray-400 font-black uppercase tracking-widest leading-none">
+                          {item.description}
+                        </p>
+                      )}
                     </div>
-                    {item.price ? (
-                      <span className="font-display text-xl text-brand-red ml-4">{item.price}</span>
-                    ) : (
-                      category.title.includes('(') && (
-                        <span className="font-display text-xl text-brand-red ml-4">
-                          {category.title.match(/(\d+)€/)?.[0]}
-                        </span>
-                      )
+                    {item.price && (
+                      <span className="font-display text-xl text-brand-red ml-4">
+                        {item.price}
+                      </span>
                     )}
                   </div>
                 ))}
@@ -49,7 +51,7 @@ const MenuSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Drinks & Sauces */}
+        {/* Section Boissons & Sauces en bas */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-16 border-t border-gray-200">
           <div className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 flex flex-col gap-6">
             <div className="flex items-center gap-4">
@@ -86,7 +88,7 @@ const MenuSection: React.FC = () => {
 
         <div className="mt-20 text-center">
           <p className="inline-block bg-brand-black text-white px-8 py-4 rounded-full font-bold shadow-lg">
-            Commandez par téléphone au <a href="tel:0384860875" className="text-brand-red hover:underline">03 84 86 08 75</a>
+            Commandez par téléphone au <a href="tel:0384860876" className="text-brand-red hover:underline">03 84 86 08 75</a>
           </p>
         </div>
       </div>
