@@ -45,13 +45,13 @@ export const MENU: MenuCategory[] = [
   },
   {
    title: "Nos Assiettes",
-    items: [
-      { id: "a1", name: "Assiette Kebab (Sur place 15€ / Emporter 13€)" },
-      { id: "a2", name: "Assiette Kofte (Sur place 15€ / Emporter 13€)" },
-      { id: "a3", name: "Assiette Steak (Sur place 15€ / Emporter 13€)" },
-      { id: "a4", name: "Assiette Mixte (Sur place 15€ / Emporter 13€)" },
-      { id: "a5", name: "Assiette Patron", price: "20€", description: "La spéciale du chef" }
-    ]
+      items: [
+        { id: "a1", name: "Assiette Kebab", price: "15€ / 13€", description: "Sur place / Emporter" },
+        { id: "a2", name: "Assiette Kofte", price: "15€ / 13€", description: "Sur place / Emporter" },
+        { id: "a3", name: "Assiette Steak", price: "15€ / 13€", description: "Sur place / Emporter" },
+        { id: "a4", name: "Assiette Mixte", price: "15€ / 13€", description: "Sur place / Emporter" },
+        { id: "a5", name: "Assiette Patron", price: "20€", description: "La spéciale du chef" }
+      ],
   },
   {
     title: "Menu Enfant (9€)",
