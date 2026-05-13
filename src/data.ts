@@ -28,7 +28,6 @@ export const MENU = [
       { id: "s7", name: "Galette", price: "9€", description: "Fine et croustillante" },
       { id: "s8", name: "Américain", price: "9€", description: "Pain moelleux, sauce spéciale" },
       { id: "s9", name: "Sandwich Végétarien", price: "9€", description: "Légumes frais" },
-      { id: "s10", name: "Sandwich Enfant", price: "7€", description: "Portion adaptée" },
     ],
   },
   {
