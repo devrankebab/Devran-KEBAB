@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, MapPin, Clock } from 'lucide-react';
-// On importe l'image proprement pour que Vite la gère
+// Importation de ton image depuis le dossier src
 import logoHeader from '../logo-header.jpeg';
 
 const Navbar: React.FC = () => {
@@ -13,12 +13,12 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
         
-        {/* LOGO SÉCURISÉ VIA L'IMPORT REACT */}
-        <div className="flex items-center gap-3">
+        {/* LOGO PARFAITEMENT AJUSTÉ EN TAILLE */}
+        <div className="flex items-center">
           <img 
             src={logoHeader} 
             alt="Devran Kebab" 
-            className="h-14 w-auto object-contain rounded-sm" 
+            className="h-11 w-auto object-contain py-0.5" 
           />
         </div>
 
