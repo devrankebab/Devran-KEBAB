@@ -22,32 +22,35 @@ const Navbar: React.FC = () => {
           />
         </div>
 
-        {/* MENU EN MODE BULLES FINES ENTOURÉES */}
-        <div className="hidden md:flex gap-4 text-[11px] font-black uppercase tracking-wider text-gray-600">
+        {/* MENU EN MODE BULLS + TEXTE AGRANDI */}
+        <div className="hidden md:flex gap-4 text-[14px] font-bold uppercase tracking-wider text-gray-700">
           <button 
             onClick={() => scrollTo('menu')} 
-            className="px-4 py-2 border border-gray-200 rounded-full hover:border-brand-red hover:text-brand-red transition-all duration-250 bg-gray-50/50 hover:bg-white shadow-sm"
+            className="px-5 py-2.5 border border-gray-200 rounded-full hover:border-brand-red hover:text-brand-red transition-all duration-250 bg-gray-50/50 hover:bg-white shadow-sm"
           >
             Menu
           </button>
           <button 
             onClick={() => scrollTo('features')} 
-            className="px-4 py-2 border border-gray-200 rounded-full hover:border-brand-red hover:text-brand-red transition-all duration-250 bg-gray-50/50 hover:bg-white shadow-sm"
+            className="px-5 py-2.5 border border-gray-200 rounded-full hover:border-brand-red hover:text-brand-red transition-all duration-250 bg-gray-50/50 hover:bg-white shadow-sm"
           >
             Points Forts
           </button>
           <button 
             onClick={() => scrollTo('location')} 
-            className="px-4 py-2 border border-gray-200 rounded-full hover:border-brand-red hover:text-brand-red transition-all duration-250 bg-gray-50/50 hover:bg-white shadow-sm"
+            className="px-5 py-2.5 border border-gray-200 rounded-full hover:border-brand-red hover:text-brand-red transition-all duration-250 bg-gray-50/50 hover:bg-white shadow-sm"
           >
             Accès
           </button>
         </div>
 
-        {/* BOUTON D'APPEL DIRECT */}
+        {/* BOUTON D'APPEL DIRECT EN GRAND */}
         <div className="flex items-center gap-3">
-          <a href="tel:0384860875" className="hidden sm:flex items-center gap-2 btn-primary !py-2 !px-5 text-[10px] tracking-widest">
-            <Phone size={14} />
+          <a 
+            href="tel:0384860875" 
+            className="hidden sm:flex items-center gap-3 btn-primary !py-3 !px-6 text-[14px] font-extrabold tracking-wider rounded-full shadow-md transition-transform hover:scale-105"
+          >
+            <Phone size={16} className="animate-pulse" />
             03 84 86 08 75
           </a>
         </div>
