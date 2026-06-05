@@ -1,5 +1,7 @@
 import React from 'react';
 import { Phone, MapPin, Clock } from 'lucide-react';
+// On importe l'image proprement pour que Vite la gère
+import logoHeader from '../logo-header.jpeg';
 
 const Navbar: React.FC = () => {
   const scrollTo = (id: string) => {
@@ -11,10 +13,10 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
         
-        {/* BLOC LOGO REFAIT AVEC TON IMAGE LOGO-HEADER.JPEG */}
+        {/* LOGO SÉCURISÉ VIA L'IMPORT REACT */}
         <div className="flex items-center gap-3">
           <img 
-            src="/logo-header.jpeg" 
+            src={logoHeader} 
             alt="Devran Kebab" 
             className="h-14 w-auto object-contain rounded-sm" 
           />
