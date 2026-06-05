@@ -11,14 +11,14 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 h-24 flex justify-between items-center">
         
-        {/* LOGO PARFAITEMENT AJUSTÉ EN TAILLE */}
-        <div className="flex items-center">
+        {/* LOGO AGRANDI ET PARFAITEMENT MIS EN VALEUR */}
+        <div className="flex items-center py-2">
           <img 
             src={logoHeader} 
             alt="Devran Kebab" 
-            className="h-11 w-auto object-contain py-0.5" 
+            className="h-16 w-auto object-contain rounded-md shadow-sm" 
           />
         </div>
 
