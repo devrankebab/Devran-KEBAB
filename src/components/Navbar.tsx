@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 h-24 flex justify-between items-center">
         
-        {/* LOGO AGRANDI ET PARFAITEMENT MIS EN VALEUR */}
+        {/* LOGO DEVRAN KEBAB */}
         <div className="flex items-center py-2">
           <img 
             src={logoHeader} 
@@ -22,11 +22,26 @@ const Navbar: React.FC = () => {
           />
         </div>
 
-        {/* LIENS DE NAVIGATION */}
-        <div className="hidden md:flex gap-8 text-[11px] font-black uppercase tracking-[0.2cm] text-gray-500">
-          <button onClick={() => scrollTo('menu')} className="hover:text-brand-red transition-colors">Menu</button>
-          <button onClick={() => scrollTo('features')} className="hover:text-brand-red transition-colors">Points Forts</button>
-          <button onClick={() => scrollTo('location')} className="hover:text-brand-red transition-colors">Accès</button>
+        {/* MENU EN MODE BULLES FINES ENTOURÉES */}
+        <div className="hidden md:flex gap-4 text-[11px] font-black uppercase tracking-wider text-gray-600">
+          <button 
+            onClick={() => scrollTo('menu')} 
+            className="px-4 py-2 border border-gray-200 rounded-full hover:border-brand-red hover:text-brand-red transition-all duration-250 bg-gray-50/50 hover:bg-white shadow-sm"
+          >
+            Menu
+          </button>
+          <button 
+            onClick={() => scrollTo('features')} 
+            className="px-4 py-2 border border-gray-200 rounded-full hover:border-brand-red hover:text-brand-red transition-all duration-250 bg-gray-50/50 hover:bg-white shadow-sm"
+          >
+            Points Forts
+          </button>
+          <button 
+            onClick={() => scrollTo('location')} 
+            className="px-4 py-2 border border-gray-200 rounded-full hover:border-brand-red hover:text-brand-red transition-all duration-250 bg-gray-50/50 hover:bg-white shadow-sm"
+          >
+            Accès
+          </button>
         </div>
 
         {/* BOUTON D'APPEL DIRECT */}
