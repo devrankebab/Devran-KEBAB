@@ -1,6 +1,6 @@
 import React from 'react';
 import { Instagram } from 'lucide-react';
-// Importation de ton logo pour harmoniser le bas du site
+// Importation de ton logo pour le bas du site
 import logoHeader from '../logo-header.jpeg';
 
 const Footer: React.FC = () => {
@@ -8,27 +8,28 @@ const Footer: React.FC = () => {
     <footer className="bg-[#0b0b0b] text-gray-400 py-16 border-t border-gray-900 font-sans">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
         
-        {/* SECTION GAUCHE : LOGO ET DESCRIPTION */}
+        {/* SECTION GAUCHE : UNIQUEMENT TON IMAGE LOGO + INSTA AGRANDI */}
         <div className="flex flex-col gap-6">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center">
             <img 
               src={logoHeader} 
               alt="Devran Kebab" 
-              className="h-14 w-auto object-contain rounded-md shadow-sm" 
+              className="h-16 w-auto object-contain rounded-md shadow-sm" 
             />
-            <span className="text-2xl font-black tracking-wider text-white uppercase font-serif">Devran</span>
           </div>
           <p className="text-[11px] font-bold tracking-widest text-gray-500 uppercase leading-relaxed max-w-sm">
             L'excellence du kebab traditionnel à Lons-le-Saunier. 100% veau mariné, 100% passion artisanale.
           </p>
-          <div className="flex gap-3">
+          
+          {/* BOUTON INSTAGRAM NETTEMENT PLUS GRAND */}
+          <div className="flex gap-3 mt-2">
             <a 
               href="https://www.instagram.com/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="w-10 h-10 rounded-xl bg-gray-900/50 hover:bg-brand-red border border-gray-800/80 hover:border-brand-red flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300"
+              className="w-14 h-14 rounded-2xl bg-gray-900/50 hover:bg-brand-red border border-gray-800/80 hover:border-brand-red flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 shadow-md hover:scale-105"
             >
-              <Instagram size={18} />
+              <Instagram size={26} />
             </a>
           </div>
         </div>
@@ -69,7 +70,7 @@ const Footer: React.FC = () => {
 
       </div>
 
-      {/* LIGNE TOUT EN BAS AVEC LE 2026 ENLEVÉ */}
+      {/* LIGNE TOUT EN BAS */}
       <div className="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-gray-900/60 text-center">
         <p className="text-[9px] font-black tracking-[0.2em] text-gray-600 uppercase">
           © DEVRAN KEBAB LONS-LE-SAUNIER • ARTISAN KEBABIER
