@@ -1,6 +1,6 @@
 import React from 'react';
 import { MENU, SAUCES } from '../data';
-import { Coffee, Droplets, Utensils } from 'lucide-react';
+import { Coffee, Utensils } from 'lucide-react';
 
 const MenuSection: React.FC = () => {
   return (
@@ -21,33 +21,41 @@ const MenuSection: React.FC = () => {
           </div>
         </div>
 
-        {/* GRILLE DES CATÉGORIES (SANDWICHS, MENUS, ASSIETTES) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-24">
+        {/* GRILLE DES CATÉGORIES ENTIÈREMENT CORRIGÉE */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 mb-24">
           {MENU.map((category, idx) => (
-            <div key={idx} className="space-y-10">
-              <h3 className="text-4xl font-display leading-none border-b-8 border-brand-red inline-block mb-4">
-                {category.title}
-              </h3>
+            <div key={idx} className="flex flex-col">
+              {/* TITRE DE LA CATÉGORIE EN BLOC SOLIDE */}
+              <div className="mb-8 border-b-8 border-brand-red pb-2 min-h-[50px] flex items-end">
+                <h3 className="text-3xl font-display leading-none text-brand-black uppercase">
+                  {category.title}
+                </h3>
+              </div>
               
-              {/* CORRECTION DE L'ALIGNEMENT DES LIGNES ICI */}
+              {/* ALIGNEMENT INDÉSTRUCTIBLE DES LIGNES */}
               <div className="space-y-6">
                 {category.items.map((item) => (
-                  <div key={item.id} className="flex flex-col gap-1 min-h-[60px] justify-center border-b border-gray-100 pb-3 group">
-                    <div className="flex justify-between items-baseline gap-4">
+                  <div key={item.id} className="flex flex-col pb-3 border-b border-gray-100/70 group">
+                    <div className="flex justify-between items-end gap-3 w-full">
                       {/* Nom du plat */}
-                      <h4 className="text-2xl font-display text-brand-black group-hover:text-brand-red transition-colors whitespace-nowrap">
+                      <h4 className="text-xl font-display text-brand-black group-hover:text-brand-red transition-colors leading-tight">
                         {item.name}
                       </h4>
-                      {/* Prix bloqué pile à droite sur la même ligne */}
+                      
+                      {/* Ligne pointillée invisible ou élégante pour l'alignement */}
+                      <div className="flex-1 border-b border-dashed border-gray-200 mb-1 min-w-[10px]"></div>
+                      
+                      {/* Prix bloqué pile à droite */}
                       {item.price && (
-                        <span className="font-display text-xl text-brand-red whitespace-nowrap">
+                        <span className="font-display text-xl text-brand-red font-bold whitespace-nowrap pl-1">
                           {item.price}
                         </span>
                       )}
                     </div>
-                    {/* Description calée en dessous sans décaler le prix */}
+                    
+                    {/* Description calée proprement dessous sans aucun impact sur le prix */}
                     {item.description && (
-                      <p className="text-[10px] text-gray-400 font-black uppercase tracking-widest leading-normal max-w-[85%]">
+                      <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest leading-normal mt-1 max-w-[90%]">
                         {item.description}
                       </p>
                     )}
@@ -68,9 +76,9 @@ const MenuSection: React.FC = () => {
             <h3 className="text-2xl font-display font-black">Nos Sauces</h3>
           </div>
           <div className="flex flex-wrap gap-2">
-            {SAUCES.map((blue, i) => (
-              <span key={i} className={`px-4 py-2 rounded-full text-sm font-bold ${blue.includes('maison') ? 'bg-brand-red text-white' : 'bg-brand-gray text-gray-500'}`}>
-                {blue}
+            {SAUCES.map((sauce, i) => (
+              <span key={i} className={`px-4 py-2 rounded-full text-sm font-bold ${sauce.includes('maison') ? 'bg-brand-red text-white' : 'bg-brand-gray text-gray-500'}`}>
+                {sauce}
               </span>
             ))}
           </div>
