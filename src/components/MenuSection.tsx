@@ -57,10 +57,10 @@ const MenuSection: React.FC = () => {
                     {item.description && (
                       <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest leading-normal mt-1 max-w-[90%]">
                         {item.description}
-                        {item.name === "ASSIETTE PATRON" && (
+                        {item.name && item.name.toUpperCase().trim() === "ASSIETTE PATRON" && (
                           <>
                             <br />
-                            <span className="text-gray-500 font-medium normal-case tracking-normal block mt-0.5">
+                            <span className="text-gray-500 font-medium normal-case tracking-normal block mt-1">
                               Salade, tomates, oignons, frites, kebab, 2 steaks avec fromage, 1 merguez
                             </span>
                           </>
