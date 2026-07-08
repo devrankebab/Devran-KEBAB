@@ -75,7 +75,7 @@ const MenuSection: React.FC = () => {
           ))}
         </div>
 
-        {/* SECTION SAUCES */}
+        {/* SECTION SAUCES ALIGNÉE EN GRILLE 3x2 POUR UN RENDU PARFAIT */}
         <div className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 flex flex-col gap-6 max-w-2xl mx-auto">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 bg-red-50 flex items-center justify-center rounded-xl text-brand-red">
@@ -83,9 +83,17 @@ const MenuSection: React.FC = () => {
             </div>
             <h3 className="text-2xl font-display font-black">Nos Sauces</h3>
           </div>
-          <div className="flex flex-wrap gap-2">
+          {/* Grille forcée : 2 colonnes sur mobile, 3 colonnes stables sur ordinateur */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center">
             {SAUCES.map((sauce, i) => (
-              <span key={i} className={`px-4 py-2 rounded-full text-sm font-bold ${sauce.includes('maison') ? 'bg-brand-red text-white' : 'bg-brand-gray text-gray-500'}`}>
+              <span 
+                key={i} 
+                className={`px-4 py-3 rounded-xl text-sm font-bold flex items-center justify-center ${
+                  sauce.includes('maison') 
+                    ? 'bg-brand-red text-white shadow-sm shadow-brand-red/10' 
+                    : 'bg-brand-gray text-gray-500'
+                }`}
+              >
                 {sauce}
               </span>
             ))}
