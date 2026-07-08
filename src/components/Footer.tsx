@@ -50,7 +50,9 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex items-center gap-3">
               <span className="text-brand-red">🕒</span>
-              <p className="text-gray-500">Mar - Sam: 11h30 - 14h / 18h - 22h</p>
+              <p className="text-gray-500">
+                Mar - Sam: 11h30 - 14h / 18h - 22h (Horaires d'été : 19h - 22h le soir)
+              </p>
             </div>
           </div>
         </div>
@@ -63,7 +65,7 @@ const Footer: React.FC = () => {
           <div className="bg-gray-900/30 border border-gray-900 p-6 rounded-2xl relative overflow-hidden group">
             <div className="absolute top-0 left-0 w-1 h-full bg-brand-red"></div>
             <p className="text-gray-400 italic text-xs leading-relaxed font-medium">
-              "Notre priorité est la qualité sans compromis. Venez découvrir le vrai goût du veau mariné maison, préparé avec respect pour la tradition."
+              "Notre priority est la qualité sans compromis. Venez découvrir le vrai goût du veau mariné maison, préparé avec respect pour la tradition."
             </p>
           </div>
         </div>
