@@ -77,9 +77,10 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-10 hidden lg:flex items-center gap-4 opacity-20 select-none">
+      {/* BANDEAU EN BAS CORRIGÉ AVEC LE TIRET COURT TEXTE */}
+      <div className="absolute bottom-10 left-10 hidden lg:flex items-center gap-3 opacity-20 select-none">
         <span className="font-display text-4xl tracking-tighter">DEVRAN KEBAB</span>
-        <span className="w-12 h-0.5 bg-brand-black"></span>
+        <span className="font-display text-2xl px-1 text-brand-black">-</span>
         <span className="font-display text-4xl tracking-tighter">ORIGINE FRANCE</span>
       </div>
     </section>
