@@ -61,7 +61,7 @@ const MenuSection: React.FC = () => {
                           <>
                             <br />
                             <span className="text-gray-500 font-medium normal-case tracking-normal block mt-1">
-                              Salade, tomates, oignons, frites, kebab, 2 steaks avec fromage, 1 merguez
+                              Composé de viande de kebab, 2 steaks avec fromage, 1 merguez
                             </span>
                           </>
                         )}
