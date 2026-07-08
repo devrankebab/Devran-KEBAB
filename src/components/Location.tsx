@@ -49,15 +49,22 @@ const Location: React.FC = () => {
                 <div className="w-full">
                   <h3 className="text-3xl font-display mb-6 tracking-tight">Horaires</h3>
                   <div className="space-y-4">
-                    {[
-                      { days: "Mardi - Samedi", hours: "11:30 - 14:00 / 18:00 - 22:00" },
-                      { days: "Dimanche - Lundi", hours: "Fermé" }
-                    ].map((h, i) => (
-                      <div key={i} className="flex justify-between items-center text-sm font-black uppercase tracking-[0.1em] pb-3 border-b border-gray-200 last:border-0 last:pb-0">
-                        <span className="text-gray-400">{h.days}</span>
-                        <span className="text-brand-black">{h.hours}</span>
+                    {/* LISTE DES HORAIRES CORRIGÉE AVEC LIGNE D'ÉTÉ */}
+                    <div className="flex flex-col pb-3 border-b border-gray-200">
+                      <div className="flex justify-between items-center text-sm font-black uppercase tracking-[0.1em]">
+                        <span className="text-gray-400">Mardi - Samedi</span>
+                        <span className="text-brand-black">11:30 - 14:00 / 18:00 - 22:00</span>
                       </div>
-                    ))}
+                      <div className="flex justify-between items-center text-xs font-black uppercase tracking-[0.1em] mt-1.5 text-brand-red">
+                        <span>Horaires d'été</span>
+                        <span>Le soir : 19:00 - 22:00</span>
+                      </div>
+                    </div>
+
+                    <div className="flex justify-between items-center text-sm font-black uppercase tracking-[0.1em]">
+                      <span className="text-gray-400">Dimanche - Lundi</span>
+                      <span className="text-brand-black">Fermé</span>
+                    </div>
                   </div>
                 </div>
               </div>
