@@ -67,9 +67,10 @@ const Hero: React.FC = () => {
             </div>
             
             <div className="rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-white rotate-2 bg-brand-gray relative aspect-[3/4]">
+              {/* C'EST ICI QUE LA PHOTO A ÉTÉ MODIFIÉE */}
               <img 
-                src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?q=80&w=800&auto=format&fit=crop" 
-                alt="Delicious Kebab" 
+                src="/kebab-hero.jpg" 
+                alt="Kebab Devran" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -77,7 +78,6 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* BANDEAU EN BAS CORRIGÉ AVEC LE TIRET COURT TEXTE */}
       <div className="absolute bottom-10 left-10 hidden lg:flex items-center gap-3 opacity-20 select-none">
         <span className="font-display text-4xl tracking-tighter">DEVRAN KEBAB</span>
         <span className="font-display text-2xl px-1 text-brand-black">-</span>
