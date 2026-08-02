@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Phone, ArrowDown } from 'lucide-react';
+import kebabHeroImg from '../kebab-hero.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -67,9 +68,9 @@ const Hero: React.FC = () => {
             </div>
             
             <div className="rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-white rotate-2 bg-brand-gray relative aspect-[3/4]">
-              {/* C'EST ICI QUE LA PHOTO A ÉTÉ MODIFIÉE */}
+              {/* IMAGE IMPORTÉE DEPUIS LA RACINE DU PROJET */}
               <img 
-                src="/kebab-hero.jpg" 
+                src={kebabHeroImg} 
                 alt="Kebab Devran" 
                 className="w-full h-full object-cover"
               />
